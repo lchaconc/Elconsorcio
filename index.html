@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+	<script src="js/jquery-ui.min" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h3>El Consorcio S.A</h3>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+
+      </div>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#divMarca" role="tab" aria-controls="marca" aria-selected="true">MARCA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#divModelo" role="tab" aria-controls="modelo" aria-selected="false">MODELO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#divGeneral" role="tab" aria-controls="general" aria-selected="false">GENERAL</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="divMarca" role="tabpanel" aria-labelledby="home-tab">
+          <br>
+          <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="txtMarca" class="sr-only">Marca</label>
+              <input type="text" class="form-control claves" id="txtmarca" placeholder="Digite la marca">
+            </div>
+            <button type="button" id="btnmarca" class="btn btn-primary mb-2">Buscar por marca</button>
+          </form>
+            <small id="marcaHelp" class="form-text text-muted">Fabricante o marca del vehìculo.</small>
+            <hr>
+            <div class="row">
+              <div class="col-sm-12" id="visormarca">
+
+              </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="divModelo" role="tabpanel" aria-labelledby="profile-tab">
+          <hr>
+          <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="txtModelo" class="sr-only">Modelo</label>
+              <input type="text" class="form-control" id="txtmodelo" placeholder="Digite el modelo">
+            </div>
+            <button type="button" id="btnmodelo" class="btn btn-primary mb-2">Buscar por modelo</button>
+          </form>
+            <small id="marcaHelp" class="form-text text-muted">Modelo del vehìculo. p ej> Lancer</small>
+            <hr>
+            <div class="row">
+              <div class="col-sm-12" id="visormodelo">
+
+              </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="divGeneral" role="tabpanel" aria-labelledby="contact-tab">
+          <hr>
+          <form class="form-inline">
+            <button type="button" id="btgeneral" class="btn btn-success mb-2">Buscar General</button>
+          </form>
+
+            <hr>
+            <div class="row">
+              <div class="col-sm-12" id="visorgeneral">
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
